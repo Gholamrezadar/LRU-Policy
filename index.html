@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>پیاده سازی روش LRU</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://font.limil.org/roya.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="title-lru">LRU</h1>
+            </div>
+        </div>
+
+        <!-- inputs -->
+        <div class="row">
+            <div class="col text-center">
+
+                <div class="form-group row">
+                    <label for="frame_count" class="col-md-2 offset-md-4 col-form-label">تعداد فریم</label>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control" id="frame_count" min="1", max="5" value="3" >
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="page_input" class="col-md-2 offset-md-4 col-form-label">ترتیب ورود صفحات</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="page_input" value="1 2 3 2 4 5 6 2 5 3 1">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- frames -->
+        <div class="row">
+            <div class="col text-center" id="frame-containers-container">
+               <!-- js fills here -->
+            </div>           
+
+        </div>
+
+        <!-- orders -->
+        <div class="row order">
+            <div class="col text-center">
+                <div class="frame-container" id="order-container">
+                    <div class="frame-detail">اولویت</div>
+                    <div class="frame">5</div>
+                    <div class="frame">5</div>
+                    <div class="frame">5</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- request button -->
+        <div class="row">
+            <div class="col text-center">
+
+                <div class="form-group row">
+                    <div class="col-md-2 offset-md-5">
+                        <input type="button" class="form-control" id="request-page-button" min="1", max="5" value="درخواست صفحه" >
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="static-bottom" >
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center">© 2020 Gholamrezadar</div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

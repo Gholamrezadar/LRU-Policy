@@ -1,0 +1,110 @@
+label, input, .frame {
+    font-family: "B Roya";
+}
+
+.red
+{
+    background: red;
+}
+.green
+{
+    background: green;
+}
+.blue
+{
+    background: blue;
+}
+.title-lru
+{
+    color: rgba(46, 204, 113,1.0);
+}
+
+.row
+{
+    margin: 20px 0px;
+}
+
+#frame_count
+{
+    /* width: 60px; */
+}
+
+#frame_count
+{
+    /* width: 60px; */
+}
+
+.frame-container
+{
+    width:50px;
+    display: inline-block;
+    padding: 1px;
+    margin-right: 8px;
+    margin-left: 0px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+}
+
+.frame
+{
+    color:white;
+    background:rgb(62, 206, 122);
+    width: 100%;
+    padding: 10px 0px;
+    display: inline-block;
+    margin-bottom: 3px;
+    border-radius: 5%;
+}
+
+.frame-detail{
+    color:#7f8c8d;
+    background:rgba(236, 240, 241,1.0);
+    padding: 3px 0;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0px;
+    border-radius: 5%;
+}
+
+.order .frame-container
+{
+    width:100px;
+    display: inline-block;
+    padding: 1px;
+    border-radius: 0;
+}
+
+.order .frame
+{
+    color:white;
+    background:rgb(172, 172, 172);
+    width: 100%;
+    padding: 10px 0px;
+    display: inline-block;
+    margin-bottom: 1px;
+    border-radius: 0;
+}
+
+.order .frame-detail{
+    color:#7f8c8d;
+    background:rgba(236, 240, 241,1.0);
+    padding: 3px 0;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 1px;
+    border-radius: 0;
+    font-family: "B Roya";
+    font-size: 20px;
+}
+
+#request-page-button{
+    background: rgba(46, 204, 113,1.0);
+    color: white;
+}
+
+.footer-copyright
+{
+    margin-top: 80px;
+    font-size: 12px;
+    color: gray;
+}
