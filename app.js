@@ -24,18 +24,33 @@ function init()
 {
     frame_count = 0;
     page_input = [];
+    page_input.length = 0;
     page_count = 0
     current_page_number = 0;
     order_table = []
+    order_table.length = 0;
     frames = []
+    frames.length = 0
     page_to_replace = undefined
     is_tekrari = false
     is_full = false
 
 
+    // validation
+    if(parseInt($("#frame_count").val()) > 6 || parseInt($("#frame_count").val()) < 1)
+    {
+        alert("ورودی نامعتبر")
+        return
+    }
+    if($("#page_input").val().trim().split(" ").length > 15 || $("#page_input").val().trim().split(" ").length < 1)
+    {
+        alert("ورودی نامعتبر")
+        return
+    }
+
     // get user inputs
     frame_count = parseInt($("#frame_count").val());
-    page_input = $("#page_input").val().split(" ");
+    page_input = $("#page_input").val().trim().split(" ");
     page_count = page_input.length;
 
     // create #frame-containers-container
@@ -62,6 +77,18 @@ function init()
 
 function update()
 {
+    // validation
+    if(parseInt($("#frame_count").val()) > 6 || parseInt($("#frame_count").val()) < 1)
+    {
+        alert("ورودی نامعتبر")
+        return
+    }
+    if($("#page_input").val().trim().split(" ").length > 15 || $("#page_input").val().trim().split(" ").length < 1)
+    {
+        alert("ورودی نامعتبر")
+        return
+    }
+    
     is_tekrari = false
     is_full = false
 
